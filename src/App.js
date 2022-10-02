@@ -1,16 +1,13 @@
 import "./App.css";
-import { styled } from "@mui/material/styles";
-import { Grid, Stack, Paper } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
+// components
+import Association from "./components/Association";
+
+// assets
+import logo from "./assets/logo192.png";
 
 function App() {
   return (
@@ -20,92 +17,117 @@ function App() {
         style={{
           height: "100vh",
           width: "100vw",
-          backgroundColor: "gray",
+          backgroundColor: "#c5d377",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
         <h1>Marché Solidaire</h1>
-        <h2>Informations complementaires</h2>
+        <h2>
+          Organisé par l'association <i>Couleur Solidaire</i>
+        </h2>
       </Stack>
       <Grid
         container
-        spacing={2}
+        spacing={4}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         style={{
           backgroundColor: "white",
           minHeight: "100vh",
           minWidth: "100vw",
+          padding: "4vw",
         }}
       >
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dignissim porttitor mauris, et commodo ex fermentum ac. Mauris ac
-            justo nec elit sollicitudin viverra sit amet eget enim. Ut quis
-            finibus elit. Mauris et sollicitudin erat. Aliquam in semper eros.
-            Duis pharetra ipsum ut orci vehicula, vitae eleifend ante pulvinar.
-          </Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dignissim porttitor mauris, et commodo ex fermentum ac. Mauris ac
-            justo nec elit sollicitudin viverra sit amet eget enim. Ut quis
-            finibus elit. Mauris et sollicitudin erat. Aliquam in semper eros.
-            Duis pharetra ipsum ut orci vehicula, vitae eleifend ante pulvinar.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dignissim porttitor mauris, et commodo ex fermentum ac. Mauris ac
-            justo nec elit sollicitudin viverra sit amet eget enim. Ut quis
-            finibus elit. Mauris et sollicitudin erat. Aliquam in semper eros.
-            Duis pharetra ipsum ut orci vehicula, vitae eleifend ante pulvinar.
-          </Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>Association</Item>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Item>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dignissim porttitor mauris, et commodo ex fermentum ac. Mauris ac
-            justo nec elit sollicitudin viverra sit amet eget enim. Ut quis
-            finibus elit. Mauris et sollicitudin erat. Aliquam in semper eros.
-            Duis pharetra ipsum ut orci vehicula, vitae eleifend ante pulvinar.
-          </Item>
-        </Grid>
+        <Association
+          picture={logo}
+          name="Couleur Solidaire"
+          description="Organisation d'évènements solidaires, le soutien ou la participation à toute opération à caractère solidaire."
+          link="https://www.net1901.org/association/COULEURS-SOLIDAIRES,1278004.html"
+        />
+        <Association
+          picture={logo}
+          name="Un nom d'association long. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          description="Une description longue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
+        <Association
+          picture={logo}
+          name="Association"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit orci eu nunc condimentum tincidunt. Donec et diam id turpis finibus aliquam et eu urna. Aliquam varius eu nulla a lacinia. Aenean maximus quam erat. Nulla ut bibendum felis. Ut biam."
+          link="https://www.georgiabjarstal.com"
+        />
       </Grid>
       <Stack
         direction="row"
@@ -115,7 +137,6 @@ function App() {
         style={{
           backgroundColor: "white",
           alignItems: "center",
-          justifyContent: "center",
         }}
       >
         <a
