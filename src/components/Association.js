@@ -3,7 +3,8 @@ import { Grid, Stack, Paper } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   // backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  backgroundColor: "#d1dfd8",
+  backgroundColor: "white",
+  borderRadius: 20,
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",

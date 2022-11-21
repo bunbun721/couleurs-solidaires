@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 // components
 import Association from "./components/Association";
 import Snowfall from "react-snowfall";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 // assets
 import couleurs_solidaires from "./assets/couleurs_solidaires.png";
@@ -37,7 +38,7 @@ function App() {
         style={{
           height: "50vh",
           width: "100vw",
-          backgroundColor: "#ee3032",
+          backgroundColor: "#a62123",
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -45,7 +46,7 @@ function App() {
         <Snowfall
           style={{
             width: "100vw",
-            height: "47vh",
+            height: "50vh",
           }}
         />
         <Stack
@@ -72,12 +73,13 @@ function App() {
           </Stack>
         </Stack>
       </Stack>
+      <ResponsiveAppBar />
       <Grid
         container
         spacing={4}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         style={{
-          backgroundColor: "#e8efeb",
+          backgroundColor: "white",
           minHeight: "100vh",
           minWidth: "100vw",
           padding: "4vw",
