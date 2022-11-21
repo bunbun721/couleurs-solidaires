@@ -10,7 +10,6 @@ import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 // assets
 import couleurs_solidaires from "./assets/couleurs_solidaires.png";
-import logo from "./assets/logo192.png";
 import apprentis from "./assets/apprentis.png";
 import asasoa from "./assets/asasoa.png";
 import asf from "./assets/asf.jpg";
@@ -27,7 +26,6 @@ import musique from "./assets/musique.jpg";
 import sem from "./assets/sem.png";
 import sipar from "./assets/sipar.png";
 import slovensko from "./assets/slovensko.png";
-import ssnam from "./assets/ssnam.png";
 import vsd from "./assets/vsd.jpg";
 
 function App() {
