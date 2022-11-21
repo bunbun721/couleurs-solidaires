@@ -3,7 +3,7 @@ import { Grid, Stack, Paper } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   // backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  backgroundColor: "#f9faf1",
+  backgroundColor: "#d1dfd8",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
@@ -11,30 +11,30 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Association({ picture, description, name, link }) {
+  const width = 200;
   return (
-    <Grid item xs={12} md={4}>
-      <Item>
-        <a href={link} target="_blank" rel="noreferrer">
-          <Stack
-            direction="row"
-            justifyContent="flex-start"
-            alignItems="center"
-            spacing={2}
+    <Grid item xs={12} md={6}>
+      <a href={link} target="_blank" rel="noreferrer">
+        <Item>
+          <div
+            style={{
+              minHeight: width * 1.25,
+            }}
           >
-            <img src={picture} alt={name} height="100" width="100" />
-
-            <Stack
-              direction="column"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-            >
-              <h3>{name}</h3>
-              <p>{description}</p>
-            </Stack>
-          </Stack>
-        </a>
-      </Item>
+            <h3>{name}</h3>
+            <img
+              src={picture}
+              alt={name}
+              width={width}
+              style={{
+                maxWidth: width,
+                maxHeight: width,
+              }}
+            />
+            <p>{description}</p>
+          </div>
+        </Item>
+      </a>
     </Grid>
   );
 }
