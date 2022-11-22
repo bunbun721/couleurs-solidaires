@@ -145,14 +145,16 @@ function Home() {
         <Association
           picture={conf}
           name="Conférence Saint-Vincent de Paul"
-          description="La Société de Saint-Vincent-de-Paul est un réseau caritatif de proximité, au service des personnes isolées ou démunies Les ateliers 'Tricots et Crochet' (créés en novembre 2022) ont pour vocation de créer du lien amical et de transmettre un savoir-faire. Les participants réalisent des modèles en tricot ou en crochet (layette, couverture, doudou) tous les jeudis de 14h à 16h30 (hors vacances scolaires) à la salle des Tybilles. Contact : 07 71 75 95 39"
+          description="La Société de Saint-Vincent-de-Paul est un réseau caritatif de proximité, au service des personnes isolées ou démunies Les ateliers 'Tricots et Crochet' (créés en novembre 2022) ont pour vocation de créer du lien amical et de transmettre un savoir-faire. Les participants réalisent des modèles en tricot ou en crochet (layette, couverture, doudou) tous les jeudis de 14h à 16h30 (hors vacances scolaires) à la salle des Tybilles."
           link=""
+          tel="07 71 75 95 39"
         />
         <Association
           picture={cancer}
           name="Enfance et Cancer-Hubert Gouin"
-          description="Hubert Gouin-Enfance et Cancer soutient depuis près de 20 ans la recherche en oncologie pédiatrique, pour que des enfants aient accès à des traitements mieux ciblés, moins invasifs et mieux différenciés. L'association qui soutint financièrement différents projets sélectionnés par son comité scientifique, a été associée à 3 découvertes majeures dans la compréhension du neuroblastome, cancer du jeune enfant présentant un faible pronostic vital de l'ordre de 40%. En 2017, elle a renouvelé son soutien à l'Institut Curie pour 3 projets de recherche prometteurs pour mieux comprendre la genèse des cancers de l'enfant. L'association sensibilise aussi le grand public et les pouvoirs publics sur la nécessité de proposer de nouvelles molécules ou association de molécules, pour apporter un espoir de guérison à tous les petits malades atteints de cancer. Si 80% des jeunes enfants atteints de cancers guériront, 20% ne survivront pas, faisant du cancer la première cause de mortalité chez les enfants après les accidents domestiques. www.asso-hubert-gouin.org"
+          description="Hubert Gouin-Enfance et Cancer soutient depuis près de 20 ans la recherche en oncologie pédiatrique, pour que des enfants aient accès à des traitements mieux ciblés, moins invasifs et mieux différenciés. L'association qui soutint financièrement différents projets sélectionnés par son comité scientifique, a été associée à 3 découvertes majeures dans la compréhension du neuroblastome, cancer du jeune enfant présentant un faible pronostic vital de l'ordre de 40%. En 2017, elle a renouvelé son soutien à l'Institut Curie pour 3 projets de recherche prometteurs pour mieux comprendre la genèse des cancers de l'enfant. L'association sensibilise aussi le grand public et les pouvoirs publics sur la nécessité de proposer de nouvelles molécules ou association de molécules, pour apporter un espoir de guérison à tous les petits malades atteints de cancer. Si 80% des jeunes enfants atteints de cancers guériront, 20% ne survivront pas, faisant du cancer la première cause de mortalité chez les enfants après les accidents domestiques."
           link=""
+          site="www.asso-hubert-gouin.org"
         />
         <Association
           picture={frat}
@@ -175,8 +177,9 @@ function Home() {
         <Association
           picture={manthoc}
           name="Le Manthoc"
-          description="Le MANTHOC est une organisation péruvienne créée il y a plus de 30 ans pour améliorer la qualité de vie des enfants et adolescents travailleurs (de 6 à 17 ans) et encourager l'exercice de leurs droits. La plupart d'entre eux aident leurs parents à vendre ou à fabriquer des produits. D'autres viennent seuls de province pour travailler dans un des nombreux magasins de Lima ou comme marchands ambulants. Le mouvement propose aux jeunes une alternative à ces travaux, grâce à des ateliers de fabrication qui leur permettent de se former, d'avoir un travail digne et stable, tout en ayant la possibilité d'aller à l'école. https://www.manthoc.org.pe . Les enfants sont appelés NATs, « ninas, ninos y adolescentes trabajadores »."
+          description="Le MANTHOC est une organisation péruvienne créée il y a plus de 30 ans pour améliorer la qualité de vie des enfants et adolescents travailleurs (de 6 à 17 ans) et encourager l'exercice de leurs droits. La plupart d'entre eux aident leurs parents à vendre ou à fabriquer des produits. D'autres viennent seuls de province pour travailler dans un des nombreux magasins de Lima ou comme marchands ambulants. Le mouvement propose aux jeunes une alternative à ces travaux, grâce à des ateliers de fabrication qui leur permettent de se former, d'avoir un travail digne et stable, tout en ayant la possibilité d'aller à l'école. Les enfants sont appelés NATs, « ninas, ninos y adolescentes trabajadores »."
           link=""
+          site="www.manthoc.org.pe"
         />
         <Association
           picture={musique}
@@ -187,14 +190,16 @@ function Home() {
         <Association
           picture={sem}
           name="SEM"
-          description="Soutien de l'Enfant Malade (SEM) a été créée en 2001 par des soignants du service de réanimation infantile et rééducation neuro-respiratoire de l'Hôpital Raymond Poincaré de Garches. Conscients des spécificités du service, de la durée d'hospitalisation des enfants (certains enfants y passent toute leur enfance et leur adolescence), et surtout de la lourdeur des pathologies prises en charge, l'équipe s'attache à améliorer le cadre de vie à l'hôpital, pour un meilleur moral des jeunes patients et de leur famille. L'association a étendu son action à tout le service de pédiatrie de l'hôpital (hôpital de jour, école au sein de l'hôpital…). Les fonds proviennent des ventes de Noël, dons d'entreprise et d'associations diverses. Les actions permettent de financer divers projets : amélioration de la qualité de vie au quotidien des enfants (goûters festifs, décorations du service, sorties à l'extérieur) ; soutien à toutes les manifestations organisées par le personnel (« Garches Circus »), achats de tablettes, etc. ; acquisition de mobilier adapté (table réglable pour les fauteuils roulants et chaises réglables) ; fourniture de matériel de puériculture (couverture chauffante, etc.) ; achat d'un fauteuil roulant électrique avec commande buccale, mis à la disposition des patients www.la-sem.com "
+          description="Soutien de l'Enfant Malade (SEM) a été créée en 2001 par des soignants du service de réanimation infantile et rééducation neuro-respiratoire de l'Hôpital Raymond Poincaré de Garches. Conscients des spécificités du service, de la durée d'hospitalisation des enfants (certains enfants y passent toute leur enfance et leur adolescence), et surtout de la lourdeur des pathologies prises en charge, l'équipe s'attache à améliorer le cadre de vie à l'hôpital, pour un meilleur moral des jeunes patients et de leur famille. L'association a étendu son action à tout le service de pédiatrie de l'hôpital (hôpital de jour, école au sein de l'hôpital…). Les fonds proviennent des ventes de Noël, dons d'entreprise et d'associations diverses. Les actions permettent de financer divers projets : amélioration de la qualité de vie au quotidien des enfants (goûters festifs, décorations du service, sorties à l'extérieur) ; soutien à toutes les manifestations organisées par le personnel (« Garches Circus »), achats de tablettes, etc. ; acquisition de mobilier adapté (table réglable pour les fauteuils roulants et chaises réglables) ; fourniture de matériel de puériculture (couverture chauffante, etc.) ; achat d'un fauteuil roulant électrique avec commande buccale, mis à la disposition des patients."
           link=""
+          site="www.la-sem.com"
         />
         <Association
           picture={sipar}
           name="SIPAR"
-          description="SIPAR a été créée en 1982 pour accueillir des réfugiés cambodgiens en France. Et depuis 26 ans, un réseau national de 440 lieux de lecture a été mis en place au Cambodge (dans des écoles, des villages, des hôpitaux, des prisons ou des usines) avec plus de 640.000 bénéficiaires. Lire et instruire pour construire l'avenir. www.sipar.org "
+          description="SIPAR a été créée en 1982 pour accueillir des réfugiés cambodgiens en France. Et depuis 26 ans, un réseau national de 440 lieux de lecture a été mis en place au Cambodge (dans des écoles, des villages, des hôpitaux, des prisons ou des usines) avec plus de 640.000 bénéficiaires. Lire et instruire pour construire l'avenir."
           link=""
+          site="www.sipar.org"
         />
         <Association
           picture={slovensko}

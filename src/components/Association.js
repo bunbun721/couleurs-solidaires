@@ -1,6 +1,8 @@
 import { styled } from "@mui/material/styles";
 import { Grid, Paper } from "@mui/material";
 
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "white",
   borderRadius: 20,
@@ -10,33 +12,65 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function Association({ picture, description, name, link }) {
+function Association({
+  picture,
+  description,
+  name,
+  link,
+  site = null,
+  tel = null,
+  email = null,
+}) {
   const width = 200;
   return (
     <Grid item xs={12} md={6}>
-      <a href={link} target="_blank" rel="noreferrer">
-        <Item>
-          <div
+      <Item>
+        <div
+          style={{
+            minHeight: width * 1.25,
+            paddingRight: 15,
+            paddingLeft: 10,
+          }}
+        >
+          <h3>{name}</h3>
+          <img
+            src={picture}
+            alt={name}
+            width={width}
             style={{
-              minHeight: width * 1.25,
-              paddingRight: 15,
-              paddingLeft: 10,
+              maxWidth: width,
+              maxHeight: width,
             }}
-          >
-            <h3>{name}</h3>
-            <img
-              src={picture}
-              alt={name}
-              width={width}
-              style={{
-                maxWidth: width,
-                maxHeight: width,
-              }}
-            />
-            <p>{description}</p>
-          </div>
-        </Item>
-      </a>
+          />
+          <p>{description}</p>
+
+          {tel ? (
+            <p>
+              Numero : <a href={"tel:" + tel}>{tel}</a>
+            </p>
+          ) : null}
+
+          {email ? (
+            <p>
+              <a href={"mailto:" + email}>{email}</a>
+            </p>
+          ) : null}
+
+          {site ? (
+            <p>
+              Site Internet :{" "}
+              <a href={site} target="_blank" rel="noreferrer">
+                {site}
+              </a>
+            </p>
+          ) : null}
+          <a href={link} target="_blank" rel="noreferrer">
+            <VolunteerActivismIcon />
+            {"  "}
+            Faire un don
+          </a>
+        </div>
+      </Item>
     </Grid>
   );
 }
