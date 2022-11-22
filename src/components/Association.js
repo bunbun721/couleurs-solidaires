@@ -2,7 +2,6 @@ import { styled } from "@mui/material/styles";
 import { Grid, Paper } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
-  // backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   backgroundColor: "white",
   borderRadius: 20,
   ...theme.typography.body2,
@@ -20,6 +19,8 @@ function Association({ picture, description, name, link }) {
           <div
             style={{
               minHeight: width * 1.25,
+              paddingRight: 15,
+              paddingLeft: 10,
             }}
           >
             <h3>{name}</h3>

@@ -34,7 +34,7 @@ function App() {
       <Stack
         direction="column"
         style={{
-          height: "50vh",
+          minHeight: "50vh",
           width: "100vw",
           backgroundColor: "#a62123",
           justifyContent: "center",
@@ -47,29 +47,53 @@ function App() {
             height: "50vh",
           }}
         />
-        <Stack
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={5}
-        >
-          <img
-            src={couleurs_solidaires}
-            alt={"couleurs solidaires"}
-            width={300}
-          />
-          <Stack
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-            spacing={0}
+        <Grid container alignItems="center" spacing={2}>
+          <Grid item xs={0.5} sm={6} md={6} lg={6} xl={6}>
+            <div
+              style={
+                {
+                  // alignItems: "center",
+                  // justifyContent: "center",
+                }
+              }
+            >
+              <img
+                src={couleurs_solidaires}
+                alt={"couleurs solidaires"}
+                width={300}
+                style={{
+                  float: "right",
+                  maxWidth: 33 + "vw",
+                }}
+              />
+            </div>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            xl={6}
+            style={{
+              textAlign: "left",
+              paddingLeft: 30,
+              paddingRight: 10,
+            }}
           >
-            <h1>Marché Solidaire</h1>
-            <h2>
-              Organisé par l'association <i>Couleurs Solidaires</i>
-            </h2>
-          </Stack>
-        </Stack>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              alignItems="flex-start"
+              spacing={0}
+            >
+              <h1>Marché Solidaire</h1>
+              <h2>
+                Organisé par l'association <i>Couleurs Solidaires</i>
+              </h2>
+            </Stack>
+          </Grid>
+        </Grid>
       </Stack>
       <ResponsiveAppBar />
       <Grid
