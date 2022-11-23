@@ -10,7 +10,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Charte de l'exposant solidaire", "Informations Pratiques"];
+const pages = [
+  { name: "Accueil", href: "/" },
+  { name: "Couleurs Solidaires", href: "couleurs-solidaires" },
+  { name: "Charte de l'exposant solidaire", href: "charte" },
+  { name: "Informations pratiques", href: "informations-pratiques" },
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -80,8 +85,12 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page.name}
+                  onClick={handleCloseNavMenu}
+                  href={page.href}
+                >
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -89,11 +98,12 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
+                href={`/${page.href}`}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
