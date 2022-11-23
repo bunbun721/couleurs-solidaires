@@ -1,6 +1,7 @@
 import { Stack } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
+import FreeBreakfastIcon from "@mui/icons-material/FreeBreakfast";
 
 function Footer() {
   return (
@@ -34,6 +35,25 @@ function Footer() {
           style={{ color: "black" }}
         >
           <GitHubIcon />
+        </a>
+        <p>{"\u22C5"}</p>
+        <p>
+          <a
+            href="https://www.buymeacoffee.com/georgiab"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "black" }}
+          >
+            Offrir un café
+          </a>
+        </p>
+        <a
+          href="https://www.buymeacoffee.com/georgiab"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "black" }}
+        >
+          <FreeBreakfastIcon />
         </a>
       </Stack>
     </>
