@@ -27,7 +27,7 @@ function Association({
       <Item>
         <div
           style={{
-            minHeight: width * 1.25,
+            minHeight: width * 1.4,
             paddingRight: 15,
             paddingLeft: 10,
           }}
