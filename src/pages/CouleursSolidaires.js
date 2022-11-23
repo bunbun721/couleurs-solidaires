@@ -7,18 +7,18 @@ function CouleursSolidaires() {
       <Header />
       <div className="page">
         <h3>Couleurs Solidaires</h3>
-        <p>Ajouter la description de l'association</p>
+        <p>Ajouter la description de l'association.</p>
 
         <h4>Membres du Bureau</h4>
-
-        <p>Président : Arnaud SOUBELET</p>
-        <p>Vice-Présidente : Sylvie CAVELIER</p>
-        <p>Secrétaire-générale : Emmanuelle DECLERCK</p>
-        <p>Trésorière : Anne RENARD</p>
-        <p>Secrétaire générale- adjointe : Brigitte CHOTEL</p>
-        <p>Trésorier-adjoint : Philippe BEAUCHAMPS</p>
-        <p>Responsable Communication : Natalie VOCK-VERLEY</p>
-        <p></p>
+        <ul>
+          <li>Président : Arnaud SOUBELET</li>
+          <li>Vice-Présidente : Sylvie CAVELIER</li>
+          <li>Secrétaire-générale : Emmanuelle DECLERCK</li>
+          <li>Trésorière : Anne RENARD</li>
+          <li>Secrétaire générale- adjointe : Brigitte CHOTEL</li>
+          <li>Trésorier-adjoint : Philippe BEAUCHAMPS</li>
+          <li>Responsable Communication : Natalie VOCK-VERLEY</li>
+        </ul>
         <h4>Contact</h4>
         <p>
           Addresse email :{" "}

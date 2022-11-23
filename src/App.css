@@ -52,7 +52,9 @@ a:active {
   color: #b74d4e;
 }
 
-p {
+p,
+li,
+ul {
   font-size: large;
   color: rgb(58, 50, 50);
 }
@@ -64,4 +66,5 @@ p {
 .page {
   margin: 2vh 10vw 2vh 10vw;
   justify-content: left;
+  min-height: 50vh;
 }
