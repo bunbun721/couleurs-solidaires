@@ -1,7 +1,6 @@
 import { Stack } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FreeBreakfastIcon from "@mui/icons-material/FreeBreakfast";
 
 function Footer() {
   return (
