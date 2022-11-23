@@ -9,12 +9,16 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Stack } from "@mui/material";
 
 const pages = [
-  { name: "Accueil", href: "/" },
+  { name: "Accueil", href: "" },
   { name: "Couleurs Solidaires", href: "couleurs-solidaires" },
   { name: "Charte de l'exposant solidaire", href: "charte" },
-  { name: "Informations pratiques", href: "informations-pratiques" },
+  {
+    name: "Informations pratiques",
+    href: "informations-pratiques",
+  },
 ];
 
 function ResponsiveAppBar() {
@@ -37,24 +41,6 @@ function ResponsiveAppBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Accueil
-          </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -84,27 +70,59 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem
-                  key={page.name}
-                  onClick={handleCloseNavMenu}
-                  href={page.href}
-                >
-                  <Typography textAlign="center">{page.name}</Typography>
-                </MenuItem>
-              ))}
+              <Stack
+                direction="column"
+                justifyContent="center"
+                alignItems="flex-start"
+                spacing={0}
+              >
+                {pages.map((page) => (
+                  <Button
+                    key={page.name}
+                    onClick={handleCloseNavMenu}
+                    href={`/${page.href}`}
+                    sx={{
+                      color: "black",
+                      fontFamily: "monospace",
+                      fontWeight: 700,
+                      letterSpacing: ".3rem",
+                      textDecoration: "none",
+                    }}
+                  >
+                    <MenuItem
+                      key={page.name}
+                      onClick={handleCloseNavMenu}
+                      href={`/${page.href}`}
+                    >
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </MenuItem>
+                  </Button>
+                ))}
+              </Stack>
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "space-between",
+            }}
+          >
             {pages.map((page) => (
-              <Button
-                key={page.name}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-                href={`/${page.href}`}
-              >
-                {page.name}
-              </Button>
+              <>
+                <Button
+                  key={page.name}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                    display: "block",
+                  }}
+                  href={`/${page.href}`}
+                >
+                  {page.name}
+                </Button>
+              </>
             ))}
           </Box>
         </Toolbar>
