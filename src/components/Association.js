@@ -14,6 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Association({
   picture,
+  pic,
   description,
   name,
   link,
@@ -43,6 +44,17 @@ function Association({
                 maxHeight: width,
               }}
             />
+            {pic && (
+              <img
+                src={pic}
+                alt={name}
+                width={width}
+                style={{
+                  maxWidth: width,
+                  maxHeight: width,
+                }}
+              />
+            )}
             {description.map((text, index) => (
               <p key={index}>{text}</p>
             ))}

@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import Association from "../components/Association";
 
 // assets
-import couleurs_solidaires from "../assets/couleurs_solidaires.png";
 import apprentis from "../assets/apprentis.png";
 import asasoa from "../assets/asasoa.png";
 import asf from "../assets/asf.jpg";
@@ -15,6 +14,7 @@ import breaktime from "../assets/breaktime.png";
 import cancer from "../assets/cancer.png";
 import carmeudon from "../assets/carmeudon.png";
 import conf from "../assets/conf.png";
+import couleurs_solidaires from "../assets/couleurs_solidaires.png";
 import frat from "../assets/frat.png";
 import haiti from "../assets/haiti.png";
 import impulso from "../assets/impulso.jpg";
@@ -23,6 +23,7 @@ import musique from "../assets/musique.jpg";
 import sem from "../assets/sem.png";
 import sipar from "../assets/sipar.png";
 import slovensko from "../assets/slovensko.png";
+import ssnam from "../assets/ssnam.png";
 import vsd from "../assets/vsd.jpg";
 
 function Home() {
@@ -58,6 +59,7 @@ function Home() {
         />
         <Association
           picture={asf}
+          pic={ssnam}
           name="ASF + SSNAM"
           description={[
             "ASF (Aviation Sans Frontières), organisation non gouvernementale créée en 1980, utilise le réseau aérien et sa propre flotte pour venir en aide aux plus démunis (première organisation non gouvernementale titulaire d'un Certificat de Transporteur Aérien européen).",
