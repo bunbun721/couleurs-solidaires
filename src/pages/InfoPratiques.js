@@ -36,17 +36,17 @@ function InfoPratiques() {
                 <Grid item xs={12} md={6}>
                   <h5>Samedi</h5>
                   <ul>
-                    <li>xxh - Activité</li>
-                    <li>xxh - Activité</li>
-                    <li>xxh - Activité</li>
+                    <li>11h: Animation Furoshiki</li>
+                    <li>15h: Animation Furoshiki</li>
+                    <li>17h: Animation Furoshiki</li>
                   </ul>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <h5>Dimanche</h5>
                   <ul>
-                    <li>xxh - Activité</li>
-                    <li>xxh - Activité</li>
-                    <li>xxh - Activité</li>
+                    <li>11h: Animation Furoshiki</li>
+                    <li>15h: Animation Furoshiki</li>
+                    <li>17h: Animation Furoshiki</li>
                   </ul>
                 </Grid>
               </Grid>
