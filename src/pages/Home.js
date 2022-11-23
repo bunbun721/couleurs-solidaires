@@ -3,9 +3,9 @@ import { Grid, Stack } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // components
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Association from "../components/Association";
-import Snowfall from "react-snowfall";
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
 // assets
 import couleurs_solidaires from "../assets/couleurs_solidaires.png";
@@ -30,71 +30,7 @@ import vsd from "../assets/vsd.jpg";
 function Home() {
   return (
     <>
-      <Stack
-        direction="column"
-        style={{
-          minHeight: "50vh",
-          width: "100vw",
-          backgroundColor: "#a62123",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Snowfall
-          style={{
-            width: "100vw",
-            height: "50vh",
-          }}
-        />
-        <Grid container alignItems="center" spacing={2}>
-          <Grid item xs={0.5} sm={6} md={6} lg={6} xl={6}>
-            <div
-              style={
-                {
-                  // alignItems: "center",
-                  // justifyContent: "center",
-                }
-              }
-            >
-              <img
-                src={couleurs_solidaires}
-                alt={"couleurs solidaires"}
-                width={300}
-                style={{
-                  float: "right",
-                  maxWidth: 33 + "vw",
-                }}
-              />
-            </div>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={6}
-            lg={6}
-            xl={6}
-            style={{
-              textAlign: "left",
-              paddingLeft: 30,
-              paddingRight: 10,
-            }}
-          >
-            <Stack
-              direction="column"
-              justifyContent="center"
-              alignItems="flex-start"
-              spacing={0}
-            >
-              <h1>Marché Solidaire</h1>
-              <h2>
-                Organisé par l'association <i>Couleurs Solidaires</i>
-              </h2>
-            </Stack>
-          </Grid>
-        </Grid>
-      </Stack>
-      <ResponsiveAppBar />
+      <Header />
       <Grid
         container
         spacing={4}
@@ -148,6 +84,12 @@ function Home() {
           description="La Société de Saint-Vincent-de-Paul est un réseau caritatif de proximité, au service des personnes isolées ou démunies Les ateliers 'Tricots et Crochet' (créés en novembre 2022) ont pour vocation de créer du lien amical et de transmettre un savoir-faire. Les participants réalisent des modèles en tricot ou en crochet (layette, couverture, doudou) tous les jeudis de 14h à 16h30 (hors vacances scolaires) à la salle des Tybilles."
           link=""
           tel="07 71 75 95 39"
+        />
+        <Association
+          picture={couleurs_solidaires}
+          name="Couleurs Solidaires"
+          description="TODO"
+          link=""
         />
         <Association
           picture={cancer}
@@ -216,28 +158,7 @@ Consciente que les intégrismes prospèrent sur la misère et le manque d'éduca
           link=""
         />
       </Grid>
-      <Stack
-        direction="row"
-        justifyContent="center"
-        alignItems="flex-end"
-        spacing={2}
-        style={{
-          backgroundColor: "white",
-          alignItems: "center",
-        }}
-      >
-        <a
-          href="https://www.georgiabjarstal.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <p>Made by Georgia Bjärstål</p>
-        </a>
-        <p>{"\u22C5"}</p>
-        <a href="https://github.com/bunbun721" target="_blank" rel="noreferrer">
-          <GitHubIcon />
-        </a>
-      </Stack>
+      <Footer />
     </>
   );
 }
