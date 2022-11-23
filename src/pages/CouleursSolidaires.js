@@ -21,7 +21,7 @@ function CouleursSolidaires() {
         </ul>
         <h4>Contact</h4>
         <p>
-          Addresse email :{" "}
+          Adresse mail :{" "}
           <a href="mailto:couleurssolidaires.asso@gmail.com">
             couleurssolidaires.asso@gmail.com
           </a>
