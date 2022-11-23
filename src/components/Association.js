@@ -32,38 +32,40 @@ function Association({
             paddingLeft: 10,
           }}
         >
-          <h3>{name}</h3>
-          <img
-            src={picture}
-            alt={name}
-            width={width}
-            style={{
-              maxWidth: width,
-              maxHeight: width,
-            }}
-          />
-          <p>{description}</p>
+          <div className="asso">
+            <h3>{name}</h3>
+            <img
+              src={picture}
+              alt={name}
+              width={width}
+              style={{
+                maxWidth: width,
+                maxHeight: width,
+              }}
+            />
+            <p>{description}</p>
 
-          {tel ? (
-            <p>
-              Numero : <a href={"tel:" + tel}>{tel}</a>
-            </p>
-          ) : null}
+            {tel ? (
+              <p>
+                Numero : <a href={"tel:" + tel}>{tel}</a>
+              </p>
+            ) : null}
 
-          {email ? (
-            <p>
-              <a href={"mailto:" + email}>{email}</a>
-            </p>
-          ) : null}
+            {email ? (
+              <p>
+                <a href={"mailto:" + email}>{email}</a>
+              </p>
+            ) : null}
 
-          {site ? (
-            <p>
-              Site Internet :{" "}
-              <a href={site} target="_blank" rel="noreferrer">
-                {site}
-              </a>
-            </p>
-          ) : null}
+            {site ? (
+              <p>
+                Site Internet :{" "}
+                <a href={site} target="_blank" rel="noreferrer">
+                  {site}
+                </a>
+              </p>
+            ) : null}
+          </div>
           <a href={link} target="_blank" rel="noreferrer">
             <VolunteerActivismIcon />
             {"  "}

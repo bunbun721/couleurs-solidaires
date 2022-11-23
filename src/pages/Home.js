@@ -1,6 +1,4 @@
-import { Grid, Stack } from "@mui/material";
-
-import GitHubIcon from "@mui/icons-material/GitHub";
+import { Grid } from "@mui/material";
 
 // components
 import Header from "../components/Header";
