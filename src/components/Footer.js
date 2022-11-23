@@ -45,16 +45,9 @@ function Footer() {
             style={{ color: "black" }}
           >
             Offrir un café
+            {" \u2615"}
           </a>
         </p>
-        <a
-          href="https://www.buymeacoffee.com/georgiab"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "black" }}
-        >
-          <FreeBreakfastIcon />
-        </a>
       </Stack>
     </>
   );
