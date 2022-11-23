@@ -18,9 +18,12 @@ h3 {
   padding: 0;
 }
 
-a {
+h4 {
   color: #000000;
-  text-decoration: none;
+  font-family: "Overlock";
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -30,7 +33,35 @@ img {
   margin: 0px 10px 0px 0px;
 }
 
+a {
+  color: #841a1c;
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: #841a1c;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #b74d4e;
+}
+
 p {
+  font-size: large;
+  color: rgb(58, 50, 50);
+}
+
+.asso {
   text-align: justify;
-  font-size: medium;
+}
+
+.page {
+  margin: 2vh 10vw 2vh 10vw;
+  justify-content: left;
 }
