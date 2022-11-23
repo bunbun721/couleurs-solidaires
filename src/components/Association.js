@@ -62,7 +62,7 @@ function Association({
 
             {tel ? (
               <p>
-                Numero : <a href={"tel:" + tel}>{tel}</a>
+                Numéro : <a href={"tel:" + tel}>{tel}</a>
               </p>
             ) : null}
 
