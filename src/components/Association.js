@@ -27,6 +27,7 @@ function Association({
     <Grid item xs={12} md={6}>
       <Item>
         <div
+          className="main"
           style={{
             minHeight: width * 1.4,
             paddingRight: 15,

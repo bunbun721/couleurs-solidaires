@@ -49,22 +49,26 @@ img {
   margin: 0px 10px 0px 0px;
 }
 
-a {
+.main a,
+.page a {
   color: #841a1c;
   text-decoration: none;
 }
 /* unvisited link */
-a:link {
+.main a:link,
+.page a:link {
   color: #841a1c;
 }
 
 /* mouse over link */
-a:hover {
+.main a:hover,
+.page a:hover {
   text-decoration: underline;
 }
 
 /* selected link */
-a:active {
+.main a:active,
+.page a:active {
   color: #b74d4e;
 }
 
