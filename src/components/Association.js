@@ -43,7 +43,9 @@ function Association({
                 maxHeight: width,
               }}
             />
-            <p>{description}</p>
+            {description.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
 
             {tel ? (
               <p>
