@@ -26,6 +26,12 @@ import slovensko from "../assets/slovensko.png";
 import ssnam from "../assets/ssnam.png";
 import vsd from "../assets/vsd.jpg";
 
+// RIB
+import rib_carmeudon from "../assets/RIB/carmeudon.pdf";
+import rib_musique from "../assets/RIB/musique.jpg";
+import rib_sipar from "../assets/RIB/sipar.pdf";
+import rib_vsd from "../assets/RIB/vsd.PNG";
+
 function Home() {
   return (
     <>
@@ -90,7 +96,7 @@ function Home() {
             "CarMeudon accueille des réfugiés de toutes origines (nationalité, religion, milieu social) et les aider à s'insérer, en s'appuyant sur le réseau des organisations caritatives présentes sur le secteur. Depuis 2015, elle comprend 250 membres (dont 50 bénévoles actifs). En toute indépendance, elle est partenaire de la mairie, des organismes publics et des organisations caritatives (les paroisses comme Saint-Martin, ou le diocèse). Une vingtaine de réfugiés originaires du Moyen-Orient (Syrie, Irak), du Tibet et d'Ukraine ont été accueillis en 7 ans ; l'aide porte sur le logement, le soutien amical et linguistique ; les enfants et adolescents scolarisés bénéficient d'un soutien scolaire en français et en sciences ; certains des réfugiés ont d'ores et déjà trouvé un travail. Les ressources proviennent des cotisations des membres (déductibles d'impôts) et de dons. Un large réseau de générosité matérielle pourvoit à la mise à disposition de logements, de matériel divers, etc.) et morale (soutien scolaire, soutien amical, accompagnement administratif, aide à la recherche d'emploi, etc.). En 2017 le CCAS de la Ville a décerné le 1er Prix des « Meudonnais ont du cœur ».",
             "Depuis mars 2022, une soixantaine d'Ukrainiens ont été provisoirement « mis à l'abris » dans l'urgence en partenariat avec la Préfecture et la Ville.",
           ]}
-          link=""
+          link={rib_carmeudon}
         />
         <Association
           picture={conf}
@@ -131,7 +137,7 @@ function Home() {
           description={[
             "Fondée en 1994, l'association franco-haïtienne a pour objectif de développer une éducation de qualité et de promouvoir l'entreprenariat sur place, tout en faisant connaître la culture haïtienne. Depuis août 2010, la priorité est donnée au programme d'éducation numérique qui vise le déploiement de 500 classes numériques, la formation des enseignants et la fabrique de contenus en créole et français. Haïti Futur comprend 3 organisations (en Haïti, aux États-Unis et en France).",
           ]}
-          link=""
+          link="https://www.helloasso.com/don/associations/haiti-futur"
         />
         <Association
           picture={impulso}
@@ -158,7 +164,7 @@ function Home() {
             "Pour la 1ère fois en France, une partie du SEPO (Syrian Expatriate Philarmonic Orchestra) s'est produit à Meudon en 2017. Une formation d'Orpheus XXI (orcheste de Jordi Savall) se produira en novembre 2022. Ces concerts solidaires ont 3 objectifs : partage culturel des musiques du monde, dialogue entre musiciens et spectateurs, récolte de fonds pour les associations partenaires, organisation d'ateliers de musique dans les centres d'accueil en région parisienne.",
             "Des ateliers-concerts pédagogiques auprès des élèves (4ème et CM2) de Meudon sont mis en place en partenariat avec la Ville.",
           ]}
-          link=""
+          link={rib_musique}
         />
         <Association
           picture={sem}
@@ -176,7 +182,7 @@ function Home() {
           description={[
             "SIPAR a été créée en 1982 pour accueillir des réfugiés cambodgiens en France. Et depuis 26 ans, un réseau national de 440 lieux de lecture a été mis en place au Cambodge (dans des écoles, des villages, des hôpitaux, des prisons ou des usines) avec plus de 640.000 bénéficiaires. Lire et instruire pour construire l'avenir.",
           ]}
-          link=""
+          link={rib_sipar}
           site="www.sipar.org"
         />
         <Association
@@ -194,7 +200,7 @@ function Home() {
             "VSD intervient en Afrique de l'Ouest, notamment au Burkina-Faso, depuis près de 20 ans.  Elle aide au développement des populations rurales précaires (alphabétisation, cantines scolaires, parrainages, microcrédits, groupements paysans, fonçage de puits). Elle gère un centre d'exploitation agricole pilote et un collège (à Kokologho).",
             "Consciente que les intégrismes prospèrent sur la misère et le manque d'éducation, l'association VSD concentre actuellement ses efforts sur l'accueil d'élèves déplacés qui ont dû fuir leurs villages dévastés par l'insécurité et les dérives djihadistes, en leurs fournissant logement, nourriture, soins, fournitures et inscriptions dans des établissements scolaires en zones préservées.",
           ]}
-          link=""
+          link={rib_vsd}
         />
       </Grid>
       <Footer />
