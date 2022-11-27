@@ -21,6 +21,7 @@ function Association({
   site = null,
   tel = null,
   email = null,
+  flyer = null,
 }) {
   const width = 200;
   return (
@@ -80,6 +81,14 @@ function Association({
                 </a>
               </p>
             ) : null}
+            {flyer && (
+              <p>
+                Flyer :{" "}
+                <a href={flyer} target="_blank" rel="noreferrer">
+                  télécharger
+                </a>
+              </p>
+            )}
           </div>
           <a href={link} target="_blank" rel="noreferrer">
             <VolunteerActivismIcon />

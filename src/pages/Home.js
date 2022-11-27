@@ -32,6 +32,10 @@ import rib_musique from "../assets/RIB/musique.jpg";
 import rib_sipar from "../assets/RIB/sipar.pdf";
 import rib_vsd from "../assets/RIB/vsd.PNG";
 
+// flyers
+import flyer_sipar from "../assets/flyers/flyer_sipar.pdf";
+import flyer_vsd from "../assets/flyers/flyer_vsd.pdf";
+
 function Home() {
   return (
     <>
@@ -184,6 +188,7 @@ function Home() {
           ]}
           link={rib_sipar}
           site="www.sipar.org"
+          flyer={flyer_sipar}
         />
         <Association
           picture={slovensko}
@@ -201,6 +206,7 @@ function Home() {
             "Consciente que les intégrismes prospèrent sur la misère et le manque d'éducation, l'association VSD concentre actuellement ses efforts sur l'accueil d'élèves déplacés qui ont dû fuir leurs villages dévastés par l'insécurité et les dérives djihadistes, en leurs fournissant logement, nourriture, soins, fournitures et inscriptions dans des établissements scolaires en zones préservées.",
           ]}
           link={rib_vsd}
+          flyer={flyer_vsd}
         />
       </Grid>
       <Footer />
