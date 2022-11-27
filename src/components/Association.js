@@ -61,26 +61,26 @@ function Association({
               <p key={index}>{text}</p>
             ))}
 
-            {tel ? (
+            {tel && (
               <p>
                 Numéro : <a href={"tel:" + tel}>{tel}</a>
               </p>
-            ) : null}
+            )}
 
-            {email ? (
+            {email && (
               <p>
                 <a href={"mailto:" + email}>{email}</a>
               </p>
-            ) : null}
+            )}
 
-            {site ? (
+            {site && (
               <p>
                 Site Internet :{" "}
                 <a href={site} target="_blank" rel="noreferrer">
                   {site}
                 </a>
               </p>
-            ) : null}
+            )}
             {flyer && (
               <p>
                 Flyer :{" "}
