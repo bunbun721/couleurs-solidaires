@@ -14,6 +14,8 @@ function Footer() {
           backgroundColor: "white",
           alignItems: "center",
           paddingTop: 40,
+          paddingRight: 10,
+          paddingLeft: 10,
         }}
       >
         <p>
