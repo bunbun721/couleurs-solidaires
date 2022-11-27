@@ -13,6 +13,7 @@ function Footer() {
         style={{
           backgroundColor: "white",
           alignItems: "center",
+          paddingTop: 40,
         }}
       >
         <p>
