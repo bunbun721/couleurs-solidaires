@@ -76,7 +76,7 @@ function Association({
             {site && (
               <p>
                 Site Internet :{" "}
-                <a href={site} target="_blank" rel="noreferrer">
+                <a href={"https://" + site} target="_blank" rel="noreferrer">
                   {site}
                 </a>
               </p>
